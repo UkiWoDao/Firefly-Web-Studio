@@ -1,0 +1,203 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 2px;
+}
+
+h1, p {
+  font-weight: lighter;
+}
+
+h1 {
+  text-shadow: 3px 2px #bfbfbf;
+  color: #303030;
+}
+
+p {
+  font-size: 22px;
+  color: #8c8c8c;
+}
+
+h1::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    padding-top: 20px;
+
+    border-bottom: 1px solid #b3b3b3;
+}
+
+.ms-section {
+  font-size: 30px;
+  text-align: left;
+  padding: 35px;
+}
+
+.second-left-slide, .fourth-left-slide {
+  text-align: right;
+}
+
+.second-left-slide, .fourth-left-slide h1{
+  text-align: right;
+}
+
+.ms-tableCell {
+  padding: 0px 60px 0px 60px;
+}
+
+
+/*****************************/
+/****** N A V  M E N U *******/
+/*****************************/
+
+#open-menu {
+  position: relative;
+  font-size: 50px;
+  cursor: pointer;
+  color: white;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+#open-menu:hover {
+  color: darkgreen;
+  transition: 0.3s;
+}
+
+.sidemenu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:rgba(255,255,255,0.9);
+  overflow-x: hidden;
+  padding-top: 180px;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+.sidemenu a {
+  padding: 8px 8px 8px 0px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Lato';
+  color: #737373;
+  display: block;
+  white-space: nowrap;
+  letter-spacing: 5px;
+  margin-bottom: 30px;
+  transition: 0.3s;
+}
+
+.sidemenu a:hover {
+  text-shadow: 0px 5px 10px #007383;
+  transition-duration: 0.6s;
+}
+
+.sidemenu li {
+  list-style: none;
+}
+
+.sidemenu .close {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 85px;
+  margin-left: 50%;
+  z-index: 2;
+}
+
+
+/******************************/
+/*** S L I D E  I M A G E S ***/
+/******************************/
+
+.first-left-slide {
+  position: relative;
+  background: url(../img/1.jpeg) no-repeat;
+  background-position: center;
+}
+
+.second-right-slide {
+  background: url(../img/2.jpeg) no-repeat;
+  background-position: center;
+}
+
+.third-left-slide {
+  background: url(../img/3.jpeg) no-repeat;
+  background-position: center;
+}
+
+.fourth-right-slide {
+  background: url(../img/4.jpeg) no-repeat;
+  background-position: center;
+}
+
+.fifth-left-slide {
+  background: url(../img/5faded.jpg) no-repeat;
+  background-position: center;
+}
+
+
+/***************************************************/
+/** T E X T  S E C T I O N S  B A C K G R O U N D **/
+/***************************************************/
+
+.first-right-slide {
+  background: url(../img/bg3a.jpg) no-repeat;
+  background-position: center;
+}
+
+.second-left-slide {
+  background: url(../img/bg3a.jpg) no-repeat;
+  background-position: center;
+}
+
+.third-right-slide {
+  background: url(../img/bg3a.jpg) no-repeat;
+  background-position: center;
+}
+
+.fourth-left-slide {
+  background: url(../img/bg3a.jpg) no-repeat;
+  background-position: center;
+}
+
+.fifth-right-slide {
+  background: url(../img/bg3a.jpg) no-repeat;
+  background-position: center;
+}
+
+
+/************************/
+/******* L O G O ********/
+/************************/
+
+#logo-span {
+  display: inline-block;
+  position: relative;
+  z-index: 99999;
+  width: 50px;
+  height: auto;
+  padding: 10px;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+}
+
+
+/* DODATI NA SVAKOM SLAJDU GDE SE SIDEBAR PREKLAPA SA TEKSTOM
+   VECI BACKGROUND OPACITY */
+
+/* DODATI MEDIA QUERY GDE NAVBAR POSTAJE FIXED TOP UVEK VIDLJIV,
+   A BODY BEZ IKAKVOG SCROLL EFEKTA */
+
+/* DODATI LOADER ZBOG VELIKE KOLICINE SLIKA / SMANJITI VELICINU SLIKA */
+
+/* TACKASTI MENI SA DESNE STRANE STAVITI U BOJU */
