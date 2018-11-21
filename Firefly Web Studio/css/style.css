@@ -25,8 +25,11 @@ h1::after {
     margin: 0 auto;
     width: 100%;
     padding-top: 20px;
-
     border-bottom: 1px solid #b3b3b3;
+}
+
+.pg-content {
+  position: relative;
 }
 
 .ms-section {
@@ -52,20 +55,6 @@ h1::after {
 /****** N A V  M E N U *******/
 /*****************************/
 
-#open-menu {
-  position: relative;
-  font-size: 50px;
-  cursor: pointer;
-  color: white;
-  transition: 0.5s;
-  z-index: 1;
-}
-
-#open-menu:hover {
-  color: darkgreen;
-  transition: 0.3s;
-}
-
 .sidemenu {
   height: 100%;
   width: 0;
@@ -73,11 +62,16 @@ h1::after {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color:rgba(255,255,255,0.9);
+  background-color:rgba(255,255,255,0.7);
   overflow-x: hidden;
   padding-top: 180px;
   font-weight: 500;
   transition: 0.5s;
+  /*blurovati nav background*/
+}
+
+.sidemenu ul {
+  padding-left: 20px;
 }
 
 .sidemenu a {
@@ -85,30 +79,72 @@ h1::after {
   text-decoration: none;
   font-size: 20px;
   font-family: 'Lato';
-  color: #737373;
+  color: #262626;
   display: block;
   white-space: nowrap;
   letter-spacing: 5px;
   margin-bottom: 30px;
   transition: 0.3s;
+  filter: blur(1px);
 }
 
 .sidemenu a:hover {
   text-shadow: 0px 5px 10px #007383;
   transition-duration: 0.6s;
+  filter: blur(0px);
+
 }
 
 .sidemenu li {
   list-style: none;
 }
 
-.sidemenu .close {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 85px;
-  margin-left: 50%;
-  z-index: 2;
+
+/******************************/
+/***** M E N U  I C O N *******/
+/******************************/
+
+.menu-container {
+    display: inline-block;
+    cursor: pointer;
+    z-index: 1;
+    position: relative;
+    left: 0;
+    transition: 0.5s;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 8px;
+}
+
+.menu-container:hover {
+    opacity: 0.9;
+    /*ubaciti beli blur radi kontrasta*/
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #154d51;
+    margin: 6px 0;
+    transition: 0.4s;
+    opacity: 0.8;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
 }
 
 
@@ -179,25 +215,17 @@ h1::after {
 
 #logo-span {
   display: inline-block;
-  position: relative;
+  position: absolute;
   z-index: 99999;
   width: 50px;
   height: auto;
-  padding: 10px;
+  padding: 0;
+  top: 60px;
+  left: 12px;
 }
 
 .logo {
   width: 150px;
   height: auto;
+  transition: 0.5s;
 }
-
-
-/* DODATI NA SVAKOM SLAJDU GDE SE SIDEBAR PREKLAPA SA TEKSTOM
-   VECI BACKGROUND OPACITY */
-
-/* DODATI MEDIA QUERY GDE NAVBAR POSTAJE FIXED TOP UVEK VIDLJIV,
-   A BODY BEZ IKAKVOG SCROLL EFEKTA */
-
-/* DODATI LOADER ZBOG VELIKE KOLICINE SLIKA / SMANJITI VELICINU SLIKA */
-
-/* TACKASTI MENI SA DESNE STRANE STAVITI U BOJU */
