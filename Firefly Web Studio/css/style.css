@@ -108,26 +108,29 @@ h1::after {
     display: inline-block;
     cursor: pointer;
     z-index: 1;
-    position: relative;
-    left: 0;
+    position: absolute;
+    left: 20px;
+    top: 20px;
     transition: 0.5s;
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-bottom: 8px;
-}
-
-.menu-container:hover {
-    opacity: 0.9;
-    /*ubaciti beli blur radi kontrasta*/
-}
+    padding-bottom: 5px;
+  }
 
 .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
     background-color: #154d51;
     margin: 6px 0;
-    transition: 0.4s;
+    transition: 0.3s;
     opacity: 0.8;
+}
+
+.bars {
+  box-shadow: 0 0 10px white;
+}
+
+.menu-container:hover .bars {
+    background-color: black;
+    box-shadow: 0 0 3px white;
 }
 
 /* Rotate first bar */
@@ -229,3 +232,35 @@ h1::after {
   height: auto;
   transition: 0.5s;
 }
+
+/*****************************/
+/**** R E S P O N S I V E ****/
+/*****************************/
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {...}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
+
+
+
+/* DODATI NA SVAKOM SLAJDU GDE SE SIDEBAR PREKLAPA SA TEKSTOM
+   VECI BACKGROUND OPACITY */
+
+/* DODATI MEDIA QUERY GDE NAVBAR POSTAJE FIXED TOP UVEK VIDLJIV,
+   A BODY BEZ IKAKVOG SCROLL EFEKTA */
+
+/* DODATI LOADER ZBOG VELIKE KOLICINE SLIKA / SMANJITI VELICINU SLIKA */
+
+/* TACKASTI MENI SA DESNE STRANE STAVITI U BOJU */
