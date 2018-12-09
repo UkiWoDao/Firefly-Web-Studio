@@ -12,66 +12,78 @@
     <body>
 
       <div id="multiscroll">
-
           <div id="mysidemenu" class="sidemenu">
-            <a id="close-menu" href="javascript:void(0)" class="close" onclick="closeSM()">&times;</a>
-            <div class="sm-wrapper">
-              <ul id="myMenu">
-                <li data-menuanchor="second"><a href="#second">The Firefly Team</a></li>
-                <li data-menuanchor="third"><a href="#third">Our Goal</a></li>
-                <li data-menuanchor="fourth"><a href="#fourth">Favourite Projects</a></li>
-                <li data-menuanchor="fifth"><a href="#fifth">Get in Touch</a></li>
-              </ul>
-            </div>
+              <div class="sm-wrapper">
+                  <ul>
+                      <li data-menuanchor="second"><a href="#second">The Firefly Team</a></li>
+                      <li data-menuanchor="third"><a href="#third">Our Goal</a></li>
+                      <li data-menuanchor="fourth"><a href="#fourth">Favourite Projects</a></li>
+                      <li data-menuanchor="fifth"><a href="#fifth">Get in Touch</a></li>
+                  </ul>
+              </div>
           </div>
           <div class="pg-content">
-            <span id="open-menu" onclick="openSM()">&#9776;</span>
-            <span id="logo-span">
-              <img class="logo" src="logo/Firefly-logo-horizontal.png" alt="logo">
-            </span>
-            <div class="ms-left">
-                <div class="ms-section first-left-slide"></div>
-                <div class="ms-section second-left-slide">
-                  <h1>The Firefly Team</h1>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Molestiae dolor, recusandae ut necessitatibus! Incidunt tempora,
-                    expedita, voluptatem libero cumque a perferendis commodi ipsum,
-                    deleniti consequatur saepe explicabo eligendi, excepturi alias.</p>
-                </div>
-                <div class="ms-section third-left-slide"></div>
-                <div class="ms-section fourth-left-slide">
-                  <h1>Our projects</h1>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Ullam mollitia ut voluptatem, quasi excepturi velit blanditiis
-                    non, perferendis atque adipisci incidunt rerum pariatur quidem
-                    nostrum dolor itaque praesentium aspernatur eius!</p>
-                </div>
-                <div class="ms-section fifth-left-slide"></div>
-            </div>
-            <div class="ms-right">
-                <div id="firefly-team" class="ms-section first-right-slide">
-                    <h1>Firefly Web Studio</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Molestiae dolor, recusandae ut necessitatibus! Incidunt tempora,
-                      expedita, voluptatem libero cumque a perferendis commodi ipsum,
-                      deleniti consequatur saepe explicabo eligendi, excepturi alias.</p>
-                </div>
-                <div class="ms-section second-right-slide"></div>
-                <div class="ms-section third-right-slide">
-                  <h1>Our Goal</h1>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Necessitatibus nisi, ut magnam iure quidem sed quia maxime
-                    ad neque perspiciatis. Enim quas similique inventore, eligendi
-                    atque voluptas esse soluta autem.</p>
-                </div>
-                <div class="ms-section fourth-right-slide"></div>
-                <div class="ms-section fifth-right-slide">
-                  <h1>Get in Touch</h1>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Facere dolores optio libero adipisci iusto numquam, natus
-                    assumenda? Odit, repellendus temporibus.</p>
-                </div>
-            </div>
+              <div id="hamburger" class="menu-container" onclick="toggleNav(); myFunction(this);">
+                  <div class="bar1 bars"></div>
+                  <div class="bar2 bars"></div>
+                  <div class="bar3 bars"></div>
+              </div>
+              <span id="logo-span">
+                  <a href="#first"><img class="logo" src="logo/Firefly-logo-horizontal.png" alt="logo"></a>
+              </span>
+              <div class="ms-left">
+                  <div class="ms-section first-left-slide"></div>
+                  <div class="ms-section second-left-slide">
+                      <h1>The Firefly Team</h1>
+                      <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                          Molestiae dolor, recusandae ut necessitatibus! Incidunt tempora,
+                          expedita, voluptatem libero cumque a perferendis commodi ipsum,
+                          deleniti consequatur saepe explicabo eligendi, excepturi alias.
+                      </p>
+                  </div>
+                  <div class="ms-section third-left-slide"></div>
+                  <div class="ms-section fourth-left-slide">
+                      <h1>Our projects</h1>
+                      <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                          Ullam mollitia ut voluptatem, quasi excepturi velit blanditiis
+                          non, perferendis atque adipisci incidunt rerum pariatur quidem
+                          nostrum dolor itaque praesentium aspernatur eius!
+                      </p>
+                  </div>
+                  <div class="ms-section fifth-left-slide"></div>
+              </div>
+              <div class="ms-right">
+                  <div id="firefly-team" class="ms-section first-right-slide">
+                      <h1>Firefly Web Studio</h1>
+                      <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                          Molestiae dolor, recusandae ut necessitatibus! Incidunt tempora,
+                          expedita, voluptatem libero cumque a perferendis commodi ipsum,
+                          deleniti consequatur saepe explicabo eligendi, excepturi alias.
+                      </p>
+                  </div>
+                  <div class="ms-section second-right-slide"></div>
+                  <div class="ms-section third-right-slide">
+                      <h1>Our Goal</h1>
+                      <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                          Necessitatibus nisi, ut magnam iure quidem sed quia maxime
+                          ad neque perspiciatis. Enim quas similique inventore, eligendi
+                          atque voluptas esse soluta autem.
+                      </p>
+                  </div>
+                  <div class="ms-section fourth-right-slide"></div>
+                  <div class="ms-section fifth-right-slide">
+                        <h1>Get in Touch</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Facere dolores optio libero adipisci iusto numquam, natus
+                            assumenda? Odit, repellendus temporibus.
+                        </p>
+                  </div>
+              </div>
           </div>
       </div>
 
@@ -79,19 +91,25 @@
     <script type="text/javascript" src="https://cdn.rawgit.com/alvarotrigo/multiscroll.js/master/vendors/jquery.easings.min.js"></script>
     <script type="text/javascript" src="https://cdn.rawgit.com/alvarotrigo/multiscroll.js/master/jquery.multiscroll.min.js"></script>
     <script type="text/javascript">
-        $(document).ready(function() {
-            $('#multiscroll').multiscroll({
-              navigation: true,
-              navigationPosition: 'right',
-              navigationColor: '#000',
-              anchors: ['first', 'second', 'third', 'fourth', 'fifth'],
-              menu: '#myMenu',
+
+          $(document).ready(function() {
+              $('#multiscroll').multiscroll({
+                navigation: true,
+                navigationPosition: 'right',
+                navigationColor: 'black',
+                anchors: ['first', 'second', 'third', 'fourth', 'fifth'],
+                menu: '#myMenu',
+            });
           });
-        });
     </script>
-    <script type="text/javascript" src="js/main.js">
+    <script type="text/javascript" src="js/main.js"></script>
+    <script>
+            function myFunction(x) {
+                x.classList.toggle("change");
+            }
 
     </script>
+
     </body>
 
 </html>
