@@ -56,48 +56,96 @@ h1::after {
 /*****************************/
 
 .sidemenu {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color:rgba(255,255,255,0.7);
-  overflow-x: hidden;
-  padding-top: 180px;
-  font-weight: 500;
-  transition: 0.5s;
-  /*blurovati nav background*/
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:rgba(255,255,255,0.8);
+    overflow-x: hidden;
+    padding-top: 180px;
+    font-weight: 500;
+    transition: 0.5s ease-out;
+    /*blurovati nav background*/
 }
 
 .sidemenu ul {
-  padding-left: 20px;
+    padding-left: 20px;
+    width: 80%;
 }
 
 .sidemenu a {
-  padding: 8px 8px 8px 0px;
-  text-decoration: none;
-  font-size: 20px;
-  font-family: 'Lato';
-  color: #262626;
-  display: block;
-  white-space: nowrap;
-  letter-spacing: 5px;
-  margin-bottom: 30px;
-  transition: 0.3s;
-  filter: blur(1px);
+    padding: 8px 0px 8px 0px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #262626;
+    display: block;
+    white-space: nowrap;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+    transition: 0.3s;
+    text-shadow: 0 0 10px white;
 }
 
 .sidemenu a:hover {
-  text-shadow: 0px 5px 10px #007383;
-  transition-duration: 0.6s;
-  filter: blur(0px);
-
+    text-shadow: 0px 5px 10px #007383;
+    transition-duration: 0.6s;
 }
+
+
+/*************************************************/
+/************ LIST ITEMS ANIMATION ***************/
+/*************************************************/
 
 .sidemenu li {
-  list-style: none;
+    list-style: none;
+    opacity: 0;
 }
+
+@keyframes fadeIn {
+    0% {
+      filter: blur(10px);
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+
+    80% {
+      filter: blur(2px);
+      opacity: 0.8;
+      transform: translateY(5px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+}
+
+.animate:nth-child(1) {
+    animation-delay: 0.2s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+  }
+.animate:nth-child(2) {
+      animation-delay: 0.4s;
+      animation-name: fadeIn;
+      animation-duration: 0.4s;
+      animation-fill-mode: forwards;
+  }
+.animate:nth-child(3) {
+      animation-delay: 0.6s;
+      animation-name: fadeIn;
+      animation-duration: 0.4s;
+      animation-fill-mode: forwards;
+  }
+.animate:nth-child(4) {
+      animation-delay: 0.8s;
+      animation-name: fadeIn;
+      animation-duration: 0.4s;
+      animation-fill-mode: forwards;
+  }
+
 
 
 /******************************/
